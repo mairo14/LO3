@@ -42,7 +42,7 @@ public class OperacionesTest {
      * Test of sumarPar method, of class Operaciones.
      */
     @Test
-    
+    @Ignore
     public void testSumarPar() {
         System.out.println("sumarPar");
         Operaciones instance = new Operaciones();
@@ -64,10 +64,10 @@ public class OperacionesTest {
     public void testMayor() {
         System.out.println("mayor");
         Operaciones instance = new Operaciones();
-        int a = 2;
-        int b = 1;
+        int a = 3;
+        int b = 3;
         
-        int expResult = 2;
+        int expResult = 3;
         int result = instance.mayor(a, b);
         assertEquals(expResult, result);
         
@@ -77,13 +77,13 @@ public class OperacionesTest {
      * Test of sumarVector method, of class Operaciones.
      */
     @Test
-    @Ignore
+    
     public void testSumarVector() {
         System.out.println("sumarVector");
         Operaciones instance = new Operaciones();
-        int[] numeros = {2, 3};
+        int[] numeros = {3,2,4,6};
         
-        int expResult = 5;
+        int expResult = 15;
         int result = instance.sumarVector(numeros);
         assertEquals(expResult, result);
         

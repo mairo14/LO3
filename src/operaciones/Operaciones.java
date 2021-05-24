@@ -23,6 +23,11 @@ public class Operaciones {
     public int mayor(int a, int b) {
         if(a>b){
             return a;
+        
+        }if(b>a){
+                return b;
+        }if(a==b){
+            return a;
         }else{
             return a;
         }
@@ -32,7 +37,7 @@ public class Operaciones {
     public int sumarVector(int [] numeros) {
         int sum=0;
         for (int i = 0; i < numeros.length; i++) {
-            sum+=numeros[0];
+            sum+=numeros[i];
         }
         return sum;
     }
