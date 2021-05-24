@@ -32,7 +32,6 @@ public class Operaciones {
             return a;
         }
     }
-
    
     public int sumarVector(int [] numeros) {
         int sum=0;
